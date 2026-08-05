@@ -1,8 +1,6 @@
-alert("Zelix app.js loaded");
 const API = "https://vic-momo.onrender.com";
 
 async function login() {
-    alert("Login button clicked");
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
@@ -21,8 +19,13 @@ async function login() {
 
     if (data.access_token) {
         localStorage.setItem("token", data.access_token);
-        alert("Login successful");
+
+        document.getElementById("loginBox").style.display = "none";
+        document.getElementById("walletBox").style.display = "block";
+
+        document.getElementById("balance").innerHTML =
+            "Welcome to Zelix Wallet";
     } else {
-        alert(JSON.stringify(data));
+        alert("Invalid login");
     }
 }
