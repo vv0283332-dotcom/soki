@@ -2,7 +2,7 @@ alert("Zelix app.js loaded");
 const API = "https://vic-momo.onrender.com";
 
 async function login() {
-  alert("Login button clicked");
+    alert("Login button clicked");
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
