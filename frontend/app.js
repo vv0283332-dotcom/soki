@@ -4,16 +4,15 @@ async function login() {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
-    const form = new URLSearchParams();
-    form.append("username", email);
-    form.append("password", password);
-
     const response = await fetch(API + "/auth/login", {
         method: "POST",
         headers: {
-            "Content-Type": "application/x-www-form-urlencoded"
+            "Content-Type": "application/json"
         },
-        body: form
+        body: JSON.stringify({
+            email: email,
+            password: password
+        })
     });
 
     const data = await response.json();
