@@ -1,3 +1,4 @@
+alert("Zelix app.js loaded");
 const API = "https://vic-momo.onrender.com";
 
 async function login() {
