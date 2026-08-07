@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">arwa pop</string>
+    <string name="title_activity_main">arwa pop</string>
+    <string name="package_name">com.arwapop.chat</string>
+    <string name="custom_url_scheme">com.arwapop.chat</string>
+</resources>
